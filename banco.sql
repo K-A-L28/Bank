@@ -1,0 +1,11 @@
+CREATE DATABASE banco;
+
+USE banco;
+
+CREATE TABLE usuarios (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    nombre VARCHAR(50) NOT NULL,
+    email VARCHAR(100) UNIQUE NOT NULL,
+    contrasena VARCHAR(255) NOT NULL,
+    saldo DECIMAL(10,2) DEFAULT 0.00
+);
