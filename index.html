@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Banco Minimalista</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Banco</h1>
+    <div class="saldo" id="saldo">Saldo actual: $0.00</div>
+
+    <input type="number" id="monto" placeholder="Ingrese monto" />
+
+    <div class="botones">
+      <button onclick="accion('depositar')">Depositar</button>
+      <button onclick="accion('retirar')">Retirar</button>
+      <button onclick="accion('consultar')">Consultar</button>
+    </div>
+
+    <p id="mensaje"></p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
